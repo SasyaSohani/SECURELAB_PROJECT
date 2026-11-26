@@ -1,0 +1,2 @@
+    11ff:	mov    0x2e3a(%rip),%rax        # 4040 <counter>
+    120a:	mov    %rax,0x2e2f(%rip)        # 4040 <counter>

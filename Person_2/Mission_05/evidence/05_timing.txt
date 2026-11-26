@@ -1,0 +1,15 @@
+== without mutex ==
+Expected: 2000000
+Actual : 1576913
+
+real	0m0.065s
+user	0m0.003s
+sys	0m0.016s
+
+== with mutex ==
+Expected: 2000000
+Actual : 2000000
+
+real	0m0.083s
+user	0m0.022s
+sys	0m0.029s

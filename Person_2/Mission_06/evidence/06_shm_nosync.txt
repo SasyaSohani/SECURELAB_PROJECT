@@ -1,0 +1,9 @@
+[parent] created /dev/shm/securelab_m6 with mode 0600 (mode=nosync)
+Child received: ""   <-- EMPTY: read before the write (no synchronisation)
+[parent] unlinked /securelab_m6
+[parent] created /dev/shm/securelab_m6 with mode 0600 (mode=nosync)
+Child received: ""   <-- EMPTY: read before the write (no synchronisation)
+[parent] unlinked /securelab_m6
+[parent] created /dev/shm/securelab_m6 with mode 0600 (mode=nosync)
+Child received: ""   <-- EMPTY: read before the write (no synchronisation)
+[parent] unlinked /securelab_m6

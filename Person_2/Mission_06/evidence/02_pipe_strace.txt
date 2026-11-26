@@ -1,0 +1,5 @@
+pipe2([3, 4], 0)                        = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLDstrace: Process 7776 attached
+[pid  7775] write(4, "Hello from the parent\0", 22) = 22
+[pid  7776] read(3, "Hello from the parent\0", 127) = 22
+[pid  7776] write(1, "Child received: Hello from the p"..., 38Child received: Hello from the parent

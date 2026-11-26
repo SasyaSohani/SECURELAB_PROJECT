@@ -1,0 +1,8 @@
+openat(AT_FDCWD, "/dev/shm/securelab_m6", O_RDWR|O_CREAT|O_EXCL|O_NOFOLLOW|O_CLOEXEC, 0600) = 3
+mmap(NULL, 160, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x76987ceb0000
+[parent] created /dev/shm/securelab_m6 with mode 0600 (mode=secure)
+[pid  7901] futex(0x76987ceb0000, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+[pid  7900] futex(0x76987ceb0000, FUTEX_WAKE, 1) = 1
+[pid  7901] <... futex resumed>)        = 0
+unlink("/dev/shm/securelab_m6")         = 0
+[parent] unlinked /securelab_m6

@@ -1,0 +1,3 @@
+[parent] created /dev/shm/securelab_m6 with mode 0600 (mode=secure)
+Child received: "Hello from the parent via shared memory [token=SL-7881]"
+[parent] unlinked /securelab_m6

@@ -1,0 +1,17 @@
+=== TEST 1: INSECURE endpoint (mode 0666) ===
+[parent] created /dev/shm/securelab_m6 with mode 0666 (mode=insecure)
+Child received: "Hello from the parent via shared memory [token=SL-7963]"
+[parent] keeping it alive for 4 s so another user can try to read it...
+-rw-rw-rw- 1 srujana srujana 160 Nov 26 16:32 /dev/shm/securelab_m6
+[snoop] running as uid=65534, trying to open /securelab_m6
+[snoop] LEAKED: "Hello from the parent via shared memory [token=SL-7963]"
+[parent] unlinked /securelab_m6
+
+=== TEST 2: SECURE endpoint (mode 0600 + O_EXCL) ===
+[parent] created /dev/shm/securelab_m6 with mode 0600 (mode=secure)
+Child received: "Hello from the parent via shared memory [token=SL-7971]"
+[parent] keeping it alive for 4 s so another user can try to read it...
+-rw------- 1 srujana srujana 160 Nov 26 16:32 /dev/shm/securelab_m6
+[snoop] running as uid=65534, trying to open /securelab_m6
+[snoop] DENIED: Permission denied
+[parent] unlinked /securelab_m6

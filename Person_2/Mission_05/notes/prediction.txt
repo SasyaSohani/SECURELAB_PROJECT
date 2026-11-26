@@ -1,6 +1,0 @@
-Prediction (written before running):
-Two threads each add 1,000,000 to a shared counter, so the correct answer is 2,000,000.
-Without a mutex I expect the result to be LESS than 2,000,000 and different on each run,
-because counter++ is really three steps (read, add, write) and the threads can interrupt
-each other, so some updates are overwritten.
-With a mutex I expect exactly 2,000,000 every time, but the program will be slower.

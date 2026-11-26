@@ -1,0 +1,13 @@
+=== 1) Limits as seen INSIDE the container (cgroup v2 files) ===
+memory.max = 67108864   (64 MB)
+cpu.max    = 50000 100000   (50000/100000 = half a CPU)
+pids.max   = 20
+
+=== 2) PIDs limit: try to start 40 processes with --pids-limit 20 ===
+      1 sh: 0: Cannot fork
+processes actually running: 4
+
+=== 3) Memory limit: try to use 200 MB inside a 64 MB container ===
+Killed
+exit code with 64 MB limit: 137   (137 = killed by the kernel's OOM killer)
+exit code with no limit:    0   (0 = finished normally)

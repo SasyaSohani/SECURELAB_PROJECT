@@ -1,0 +1,32 @@
+=== Namespace IDs: HOST ===
+pid:[4026531836]
+net:[4026531833]
+mnt:[4026531832]
+uts:[4026531838]
+ipc:[4026531839]
+user:[4026531837]
+cgroup:[4026531835]
+
+=== Namespace IDs: CONTAINER ===
+pid:[4026532705]
+net:[4026532707]
+mnt:[4026532700]
+uts:[4026532703]
+ipc:[4026532704]
+user:[4026531837]
+cgroup:[4026532706]
+
+=== Hostname ===
+host     : SECURELAB-Ubuntu
+container: 012afa4a38df
+
+=== Network interfaces ===
+host             : docker0 enp0s3 lo 
+container        : eth0 lo 
+container --network none: lo 
+
+=== Same process, two PIDs ===
+inside container, PID 1 is: sleep
+on the host, that same process is PID 10700:
+    PID USER     CMD
+  10700 root     sleep 60

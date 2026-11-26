@@ -1,0 +1,13 @@
+=== Who am I inside the container? ===
+uid=0(root) gid=0(root) groups=0(root)
+
+=== Capabilities: real root on host vs root in container ===
+host root     : CapEff:	000001ffffffffff
+container root: CapEff:	00000000a80425fb
+
+=== Decoded container capabilities ===
+0x00000000a80425fb=cap_chown,cap_dac_override,cap_fowner,cap_fsetid,cap_kill,cap_setgid,cap_setuid,cap_setpcap,cap_net_bind_service,cap_net_raw,cap_sys_chroot,cap_mknod,cap_audit_write,cap_setfcap
+
+=== Container root tries to change the hostname (needs CAP_SYS_ADMIN) ===
+hostname: you must be root to change the host name
+exit code: 1

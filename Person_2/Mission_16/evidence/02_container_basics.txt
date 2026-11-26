@@ -1,0 +1,36 @@
+========== HOST (the VM) ==========
+Linux SECURELAB-Ubuntu 7.0.0-44-generic #44-Ubuntu SMP PREEMPT_DYNAMIC Fri Nov  6 02:38:04 UTC 2026 x86_64 GNU/Linux
+PRETTY_NAME="Ubuntu 26.04.1 LTS"
+processes visible on host: 232
+
+========== CONTAINER (ubuntu:26.04) ==========
+Unable to find image 'ubuntu:26.04' locally
+26.04: Pulling from library/ubuntu
+96aae9022e0e: Pulling fs layer
+517b871c26ea: Pulling fs layer
+96aae9022e0e: Download complete
+e211d985152c: Download complete
+517b871c26ea: Download complete
+517b871c26ea: Pull complete
+96aae9022e0e: Pull complete
+Digest: sha256:d66b366dac61b575bee2aef07e9c26e8070096fbe84a3d4d3eb0da069b5d76db
+Status: Downloaded newer image for ubuntu:26.04
+Linux 409c9f52eed7 7.0.0-44-generic #44-Ubuntu SMP PREEMPT_DYNAMIC Fri Nov  6 02:38:04 UTC 2026 x86_64 GNU/Linux
+PRETTY_NAME="Ubuntu 26.04.1 LTS"
+NAME="Ubuntu"
+VERSION_ID="26.04"
+VERSION="26.04.1 LTS (Resolute Raccoon)"
+VERSION_CODENAME=resolute
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=resolute
+LOGO=ubuntu-logo
+--- handout command: ps inside container ---
+    PID TTY          TIME CMD
+      1 ?        00:00:00 ps
+--- processes visible inside container (via /proc) ---
+PID 1: sh

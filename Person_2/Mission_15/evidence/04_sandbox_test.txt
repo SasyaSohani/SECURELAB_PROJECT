@@ -1,0 +1,22 @@
+===== A) BASELINE: no restrictions =====
+Running as unit: m15-baseline.service; invocation ID: 63926ab8940f40a892fbd3fd7a1934e2
+→ Overall exposure level for m15-baseline.service: 9.2 UNSAFE 😨
+[extra] opened /etc/passwd (fd 4) and kept it open
+[extra] probe /home/srujana/.ssh -> exists
+[telemetry] listening on 0.0.0.0:4444
+[StudyTimer] session complete
+
+===== B) SANDBOXED: policy applied =====
+Running as unit: m15-sandboxed.service; invocation ID: e09e2d63bf4f4927a361dee63ac4b53e
+--- sandboxed PID 8270: privileges ---
+CapEff:	0000000000000000
+CapBnd:	0000000000000000
+NoNewPrivs:	1
+--- listening on 4444? ---
+NO listener on port 4444
+→ Overall exposure level for m15-sandboxed.service: 4.9 OK 🙂
+[extra] /etc/passwd blocked: Permission denied
+[extra] probe /home/srujana/.ssh -> exists
+[telemetry] socket() blocked: Address family not supported by protocol
+[StudyTimer] tick 8/8
+[StudyTimer] session complete

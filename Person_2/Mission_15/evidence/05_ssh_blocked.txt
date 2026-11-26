@@ -1,0 +1,14 @@
+=== Normal: list ~/.ssh ===
+total 8
+drwx------  2 srujana srujana 4096 Nov 24 17:47 .
+drwxr-x--- 16 srujana srujana 4096 Nov 26 16:33 ..
+-rw-------  1 srujana srujana    0 Nov 24 17:47 authorized_keys
+
+=== Inside the sandbox: same command ===
+Running as unit: run-p8336-i8560.service; invocation ID: da0e7241665a4a1dab82fa99b41ac837
+ls: cannot open directory '/home/srujana/.ssh': Permission denied
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=2/INVALIDARGUMENT
+               Service runtime: 41ms
+             CPU time consumed: 28ms
+                   Memory peak: 1.9M (swap: 0B)

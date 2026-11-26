@@ -1,0 +1,30 @@
+[StudyTimer] pid=8107 uid=1000 starting a 25 s focus session
+[extra] opened /etc/passwd (fd 4) and kept it open
+[extra] probe /home/srujana/.ssh -> exists
+[telemetry] listening on 0.0.0.0:4444
+[StudyTimer] tick 1/25
+[StudyTimer] tick 2/25
+[StudyTimer] tick 3/25
+[StudyTimer] tick 4/25
+[StudyTimer] tick 5/25
+[StudyTimer] tick 6/25
+[StudyTimer] tick 7/25
+[StudyTimer] tick 8/25
+[StudyTimer] tick 9/25
+[StudyTimer] tick 10/25
+[StudyTimer] tick 11/25
+[StudyTimer] tick 12/25
+[StudyTimer] tick 13/25
+[StudyTimer] tick 14/25
+[StudyTimer] tick 15/25
+[StudyTimer] tick 16/25
+[StudyTimer] tick 17/25
+[StudyTimer] tick 18/25
+[StudyTimer] tick 19/25
+[StudyTimer] tick 20/25
+[StudyTimer] tick 21/25
+[StudyTimer] tick 22/25
+[StudyTimer] tick 23/25
+[StudyTimer] tick 24/25
+[StudyTimer] tick 25/25
+[StudyTimer] session complete
